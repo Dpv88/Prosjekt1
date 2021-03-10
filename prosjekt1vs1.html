@@ -47,7 +47,7 @@
     </div>
     <br />
     <div class="img-container">
-    <img src="Bildeavmeg.jpg" />
+        <img src="Bildeavmeg.jpg" />
     </div>
     <br />
     <p>Adresse:Bilet 8c, 3080 Holmestrand</p>
@@ -59,7 +59,14 @@
     <p>Født:13.07.88</p>
     <br />
     <div class="center-text">
-        <a href="callto:+4745270945">Telefon</a>
+        <button onclick="myFunction()">Telefon</button>
     </div>
+    <p id="tlf"></p>
+    <script>
+        function myFunction() {
+            document.getElementById("tlf").innerHTML = "+4745270945";
+        }
+    </script>
+
 </body>
 </html>
