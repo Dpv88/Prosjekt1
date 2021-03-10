@@ -59,11 +59,16 @@
     <p>Født:13.07.88</p>
     <br />
     <div class="center-text">
-        <button onmouseover="telefon(id="tlf")">Telefon</button>
+        <button onmouseover="telefon()"onmouseout="telno">Telefon</button>
     </div>
+    <p id="demo"></p>
     <script>
         function telefon() {
             document.getElementById("tlf").innerHTML = "+4745270945";
+        }
+        function telno() {
+            document.getElementById("tlf").innerHTML = "";
+
         }
     </script>
 
